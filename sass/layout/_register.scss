@@ -1,0 +1,15 @@
+.register{
+    &__header{
+        background-color: #E4E9FD;
+        height:100vh;
+        position: relative;
+        background-image: -webkit-linear-gradient(65deg, #38ada9 50%, #079992 50%);
+
+
+        input.register__input{
+            display: inline-block;
+        }
+        
+    }
+}
+

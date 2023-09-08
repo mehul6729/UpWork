@@ -1,0 +1,88 @@
+<%- include("header") -%>
+
+  <section class="section__profile" id="profile">
+    <div id="navbar">
+      <nav>
+        <ul class="fixed-top">
+          <li><a href="<%=url%>">Home</a></li>
+          <li><a href="<%=url%>login">Get job</a></li>
+          <li><a href="<%=url%>#hire">Hire developers</a></li>
+          <li><a href="<%=url%>">Contact</a></li>
+         </ul>
+      </nav>
+    </div>
+    
+        <div class="hire__card profile__card">
+
+
+          <div class="card__head">
+            <div class="img">
+              <i class="bi bi-person"></i>
+            </div>
+          </div>
+
+          <div class="card__body">
+
+            <h2 class="card__heading">
+              <%= userInfo.name %>
+            </h2>
+            <p><%= userInfo.email%></p>
+            <p class="web">Web Developer</p>
+            
+            
+
+
+          </div>
+
+          <div class="card__footer">
+            <p class="lang"><b>languages:</b>
+              <%= userInfo.languages %>
+            </p>
+            <p><b>location:</b> <span>
+                <%= userInfo.location %>
+              </span></p>
+            <P><b>AVG. Response Time:</b> <span>
+                <%= userInfo.art%>hr
+              </span>
+
+            <p><b>Experience: </b><span>
+                <%= userInfo.experience %>/Year
+              </span></p>
+            <p><b>Per/hr:</b>
+              <%= userInfo.hourlyPay %>$
+            </p>
+            <div class="btn__box">
+              <button class="editBtn" id="editBtn"><i class="bi bi-pencil-square"></i></button>
+            </div>
+            <form class="btn__box_del" action="/del" method="post">
+              <input type="hidden" name="userId" value="<%= userInfo.email %>">
+              <button class="delBtn" id="delBtn"><i class="bi bi-trash3-fill"></i></i></button>
+            </form>
+          </div>
+
+
+        </div>
+      
+
+      <div id="updatebox" class="updatebox">
+        <form class="profile__form" action="/profile" method="post">
+          <div class="profile__form_box">
+            <h1 class="profile__heading">Update</h1>
+            <input class="profile__input" type="text" name="fname" placeholder="userName " required>
+            <input class="profile__input" type="email" name="email" placeholder="Email" required>
+            <input class="profile__input" type="text" name="lang" placeholder="languages" required>
+            <input class="profile__input" type="number" name="hrPay" placeholder="Hourly Pay in $" required>
+            <input class="profile__input" type="text" name="location" placeholder="Location" required>
+            <input class="profile__input" type="number" name="avgResponse" placeholder="AVG. Response Time" required
+              title="In rs">
+            <input class="profile__input" type="number" name="experience" placeholder="Experience">
+            <button type="submit" class="btn_submit">update</button>
+          </div>
+      </div>
+    </section>
+
+
+
+
+
+  <%- include("footer") -%>

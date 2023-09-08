@@ -1,0 +1,23 @@
+@import "abstracts/funtions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/form";   
+@import "components/btn";  
+@import "components/navbar";
+@import "components/img";
+@import "components/card";
+@import "components/profile";
+
+
+@import "layout/login";
+@import "layout/home"; 
+@import "layout/signup";
+@import "layout/register";
+@import "layout/footer";
+ 

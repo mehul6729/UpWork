@@ -1,0 +1,70 @@
+.dark{
+    background-image: linear-gradient(to right, #38dfd6, #076b66);
+    height: 100vh;
+}
+
+.display{
+    display: none;
+}
+
+.updatebox {
+    display: none;
+  
+} 
+
+.profile{
+
+    &__card{
+        @include divCenter;
+
+        & .btn__box{
+            position: absolute;
+            top: 1%;
+            left: 1%; 
+            border: none;
+            
+            &_del{
+                position: absolute;
+                top: 1%;
+                right: 1%; 
+                border: none;
+            }
+
+            & .bi{
+                font-size: 2rem;
+                color: black;
+                background-color: #95afc0;
+                }
+            }
+    }
+    &__form{
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    
+    &__input{
+        display: block;
+        margin-bottom: 1rem;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #e0dddd ;
+        padding: 1rem;
+        font-size: 2rem;
+        }
+
+    &__form_box{
+        padding: 4rem;
+        background: white;
+        border-radius: 5px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    }
+
+.bi-trash3-fill{
+    font-size: 2rem;
+    color: #c0392b;
+    border: none;
+    background-color: #95afc0;
+}

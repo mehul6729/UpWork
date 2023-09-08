@@ -1,0 +1,20 @@
+<%- include("header") -%>
+
+<section class="signup__header">
+    
+    <form class="signup" action="/signup" method="post">
+        <div class="form-box">
+            <h1 class="Signup_heading">Sign Up</h1>
+            <input type="text" name="fname" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="password"  required>
+            <!-- <input type="password" name="confirmPassword" placeholder="Confirm Password"  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required title="Password must be at least 8 characters long and include both letters and numbers." required> -->
+            <% if (locals.error) { %>
+                <p class="error-message"><%= error %></p>
+            <% } %>
+            <button type="submit" class="btn_submit">Signup</button>
+        </div>
+    </form>
+</section>
+
+<%- include("footer") -%>

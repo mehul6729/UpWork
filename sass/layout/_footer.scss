@@ -1,0 +1,20 @@
+footer{
+    height: 10vh;
+    background-color: #045551;
+    position: relative;
+    .footer{
+        @include divCenter;
+        color: #fff;
+        text-align: center;
+
+        & p{
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            & span{
+                font-size: 1.7rem;
+                letter-spacing: 2px;
+                font-family: sans-serif;
+            }
+        }
+    }
+} 

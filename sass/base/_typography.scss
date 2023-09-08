@@ -1,0 +1,47 @@
+body {
+    font-family: lato, sans-serif;
+    line-height: 1.7;
+    color: #555;
+
+}
+
+h1.home_heading{
+    font-size: 6rem ;
+    font-family: lato, sans-serif;
+    font-weight: 100;
+    letter-spacing: .3rem;
+    word-spacing: .6rem;
+    margin-bottom: 3rem;
+    color: #fff ;
+    text-transform:capitalize ;
+
+    &.Signup_heading {
+        color: #A683E3;
+        text-align: center;
+    }
+
+    &.register__heading{
+        color: #A683E3;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+}
+
+p {
+    &.home_para {
+        color: #fff;
+        font-size: 2rem;
+        margin-bottom: 4rem;
+
+    }
+}
+
+
+.card__heading{
+    font-size: 3rem;
+    font-family: lato,sans-serif;
+    font-weight: 300;
+    letter-spacing: .3rem;
+    text-transform: capitalize;
+}

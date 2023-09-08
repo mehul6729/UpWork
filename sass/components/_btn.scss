@@ -1,0 +1,54 @@
+button {
+    border: none;
+    color: aliceblue;
+
+    &.btn_submit {
+        padding: .7rem 2.5rem;
+        font-size: 2rem;
+        width: 70%;
+        margin: 1rem 15%;
+        border-radius: 100px;
+        background-color: #A683E3;
+    }
+}
+
+.error-message {
+    color: red;
+}
+
+.btn-box{
+@include divCenter;
+    .btn{
+        margin-right: 4rem;
+        font-size: 4rem;
+        padding: .1rem 4rem;
+        background-color: white ;
+        border-radius: 300px;
+    }
+}
+
+
+.header__btn{ 
+    font-size: 3rem;
+    padding: 1rem 4rem;
+    background-color: #78e08f;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+
+    &:last-child{
+        margin-left: 6rem;
+    }
+}
+
+.hire__btn{
+    font-size: 2rem;
+    padding: .2rem 3rem;
+    background-color: #78e08f;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: .2rem; 
+    text-transform: uppercase;
+}
+

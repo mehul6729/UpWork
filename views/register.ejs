@@ -1,0 +1,26 @@
+<%- include("header") -%>
+
+<section class="register__header">
+  
+    <form class="register" action="/register" method="post">
+        <div class="form-box">
+            <h1 class="register__heading">Register</h1>
+            <input class="register__input" type="text" name="fname" placeholder="Full Name" required>
+            <input class="register__input" type="email" name="email" placeholder="Email" required>
+            <input class="register__input" type="text" name="lang" placeholder="languages" required>
+            <input class="register__input" type="number" name="hrPay" placeholder="Hourly Pay in $" required>
+            <input class="register__input" type="text" name="location" placeholder="Location" required>
+            <input class="register__input" type="number" name="avgResponse" placeholder="AVG. Response Time" required title="In rs">
+            <input class="register__input" type="number" name="number" placeholder="Experience">
+            <input class="register__input" type="password" name="password" placeholder="password"  required>
+            <input class="register__input" type="password" name="confirmPassword" placeholder="Confirm Password"  required>
+            <!-- pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required title="Password must be at least 8 characters long and include both letters and numbers." -->
+            <% if (locals.error) { %>
+                <p class="error-message"><%= error %></p>
+            <% } %>
+            <button type="submit" class="btn_submit">register</button>
+        </div>
+    </form>
+</section>
+
+<%- include("footer") -%>
